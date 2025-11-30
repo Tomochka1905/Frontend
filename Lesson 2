@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+ <html>
+ <body>
+    <header><title>Our Menu/<title></header>
+    <h1>IMAJI Coffee provides a variety of high quality coffee and drinks and flavors that are suitable for you to support and cheer up your day. We also provide coffee to accompany you at home along with the equipment.</h1>
+    <form>
+        <div>
+        <label for="Search"><Search>: </br></label>
+        <input type ="text" id ="Search" name="Search" value="Enter keyword">
+        </div>
+        <div>
+        <label for = "Price"><Price>:</br></label>
+        <input type ="text" id ="Under $10" name="Under $10" value="Under $10">
+        </div>
+        <div>
+        <label for = "Search">Sort by:></label>
+        <select id ="sort by" name="sort by" size = "3" multiple> 
+            <option value = "Best selling">Best Selling</option>
+            <option value = "Least popular">Least popular</option>
+            <option value = "Drink of the month">Drink of the month</option>
+        </select>
+        </div>
+        </form>
+        <div id =nav></div>
+        <ul>
+        <li><img src="b494cff7182edff10a135099db36ae634a0fb840.png" alt="RISTORETTO BIANCO">RISTORETTO BIANCO</li>
+        <li><img src="2dbb340a45fefe93d7630c2b2daeede1207520a9.png"alt="ICED CREAMY LATTE">ICED CREAMY LATTE</li>
+        <li><img src="49d8b32a127fd4d5ccd0e21cc83cfa1a635d58cb.png" alt="CAPPUCCINO">CAPPUCCINO"</li>
+        <li><img src ="75d1e876d0ce8ddf90404f8c81e5079c98cf55eb.png" alt="ICED LONG BLACK">ICED LONG BLACK"</li>
+    </ul>
+    <footer>
+     <p>Our Locations</p>
+     <p>Jl. Bangkringan No 19, RT.11/RW.2, Kota Surabaya, 60124</p>
+    </footer>
+ </body>
+ </html>
