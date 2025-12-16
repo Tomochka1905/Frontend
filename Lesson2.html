@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin: 0;
+}
+
+header {
+  background-color: #666;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+nav {
+  background-color: burlywood;
+  overflow: hidden;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 20;
+  padding: 40;
+}
+
+nav ul li {
+  float: left;
+}
+
+nav ul li a {
+ 
+  color: white;
+  text-align: right;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+
+nav ul li a.active {
+  background-color: rgba(143, 41, 41, 0.359);
+}
+
+.content {
+  padding: 20px;
+}
+
+.content h1 {
+  color: #333;
+}
+section ul {
+     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+}
+form {
+  background-color: #f1f1f1;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 5px;
+  display: flex;
+  gap: 20px;
+  align-items: flex-end;
+  flex-wrap: wrap;
+}
+
+.form-group {
+  flex: 3;
+  min-width: 200px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input{
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.menu-items {
+  list-style-type: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  margin: 20px 0;
+}
+
+.menu-items li {
+  text-align: center;
+  padding: 15px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.menu-items li img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+footer {
+  background-color: #666;
+  padding: 20px;
+  text-align: center;
+  color: white;
+  margin-top: 40px;
+}
+
+footer p {
+  margin: 5px 0;
+}
+</style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#story">Story</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#space">Space</a></li>
+            <li><a href="#community">Community</a></li>
+            <li><a href="#news">News</a></li>
+            <li><a href="#signIn">Sign In</a></li>
+            <li><a href="#cart" class="active">Cart</a></li>
+        </ul>
+    </nav>
+
+    <div class="content">
+        <h1>Our Menu</h1>
+        <p>IMAJI Coffee provides a variety of high quality coffee and drinks and flavors that are suitable for you to support and cheer up your day. We also provide coffee to accompany you at home along with the equipment.</p>
+        <form>
+            <div class="form-group">
+                <label for="Search">Search:</label>
+                <input type="text" id="Search" name="Search" placeholder="Enter keyword">
+            </div>
+            
+            <div class="form-group">
+                <label for="Price">Price:</label>
+                <input type="text" id="Price" name="Price" placeholder="Under $10">
+            </div>
+            
+            <div class="form-group">
+                <label for="options">Sort by:</label>
+                <input list="rating" id="options" name="options" placeholder="Select option" />
+                <datalist id="rating">
+                    <option value="Best selling"></option>
+                    <option value="Drink of the month"></option>
+                </datalist>
+            </div>
+        </form>
+
+        <ul class="menu-items">
+            <li>
+                <img src="./b494cff7182edff10a135099db36ae634a0fb840.png" alt="RISTORETTO BIANCO">
+                <div>RISTORETTO BIANCO</div>
+                <div>Only at Cafe and Delivery</div>
+                <div>$5.00 <del>$6.00</del></div>
+                <p style="color:brown;">Get 20% Off in App</p>
+
+            </li>
+            <li>
+                <img src="2dbb340a45fefe93d7630c2b2daeede1207520a9.png" alt="ICED CREAMY LATTE">
+                <div>ICED CREAMY LATTE</div>
+                 <div>Only at Cafe and Delivery</div>
+                <div>$5.00 <del>$6.00</del></div>
+                <p style="color:brown;">Get 20% Off in App</p>
+            </li>
+            <li>
+                <img src="49d8b32a127fd4d5ccd0e21cc83cfa1a635d58cb.png" alt="CAPPUCCINO">
+                <div>CAPPUCCINO</div>
+                 <div>Only at Cafe and Delivery</div>
+                <div>$5.00 <del>$6.00</del></div>
+                <p style="color:brown;">Get 20% Off in App</p>
+            </li>
+            <li>
+                <img src="75d1e876d0ce8ddf90404f8c81e5079c98cf55eb.png" alt="ICED LONG BLACK">
+                <div>ICED LONG BLACK</div>
+                 <div>Only at Cafe and Delivery</div>
+                <div>$5.00 <del>$6.00</del></div>
+                <p style="color:brown;">Get 20% Off in App</p>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p><strong>Our Locations</strong></p>
+        <p>Jl. Bangkringan No 19, RT.11/RW.2, Kota Surabaya, 60124</p>
+    </footer>
+</body>
+</html>
